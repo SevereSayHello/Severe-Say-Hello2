@@ -7,3 +7,4 @@ else
 fi
 
 gzip $1
+mv "$1.gz" ~/RECYCLE
