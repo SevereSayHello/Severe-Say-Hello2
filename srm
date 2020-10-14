@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -d ~/RECYCLE ]; then
-	find ~/RECYCLE -type f -mtime +7
+	find ~/RECYCLE -type f -mtime +7 -execdir rm -- '{}' \;
 else
 	mkdir ~/RECYCLE
 fi
