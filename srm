@@ -5,3 +5,5 @@ if [ -d ~/RECYCLE ]; then
 else
 	mkdir ~/RECYCLE
 fi
+
+gzip $1
