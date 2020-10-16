@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -d ~/RECYCLE ]; then
+	find ~/RECYCLE -type f -mtime +7 -execdir rm -- '{}' \;
+else
+	mkdir ~/RECYCLE
+fi
+
+gzip $1
+mv "$1.gz" ~/RECYCLE
